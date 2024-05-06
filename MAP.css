@@ -176,376 +176,166 @@
    display: block;
  }
 
-
- /* Language */
-
- 
-
- /* SEC 1 */
-
+ /*  */
  .home{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/3.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
- }
-
- .home-text{
-    padding-top: 222px;
- }
-
- .home-text h1 {
-   font-size: 60px;
-   line-height: 1.2;
-   color: #ffffff;
-   font-family: "Anta", sans-serif;
-   text-align: right;
-   position:absolute;
-   bottom: 100px;
-   right: 320px;
-   margin: 20px;
-   font-weight: 600;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/3.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   align-items: center;
 }
 
-/* SEC Story */
-
-.story{
-   display: flex;
-   justify-content: center;
-   background: #fffff0;
-   box-shadow: 0 0 20px rgba(33, 35, 38, 0.5) inset;
+.home-text{
+   padding-top: 222px;
 }
 
-.story p{
-   color: #000;
-   font-size: 20px;
-   font-weight: 500;
-   line-height: 40px;
-   padding: 20px;
-   overflow-wrap: break-word;
-   text-align: center;
-   width: 800px;
+.home-text h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: "Anta", sans-serif;
+  text-align: right;
+  position:absolute;
+  bottom: 100px;
+  right: 320px;
+  margin: 20px;
+  font-weight: 600;
 }
 
-/* SEC Products */
+/* SEC THAY ĐỔI STYLE */
 .product{
-   align-items: center;
-   padding-bottom: 50px;
-}
-
-.product-row{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px,auto));
-   row-gap: 7rem;
-   column-gap: 1rem;
-   align-items: center;
-   text-align: center;
-   margin-bottom: 5%;
+   grid-template-rows: repeat(1, 1fr);
+   gap: 50px;
+   background-image: url(img/10.jpg);
+   height: 45vh;
 }
 
-.product-box{
-   width: 270px;
-   height: 270px;
-   border-radius: 100%;
-   border: 1px solid #005596;
-   text-align: center;
-   padding: 8px 5px;
-   transition: all 1s ease 0s;
-   cursor: pointer;
+.product-txt{
+   display: grid;
+   justify-items: center;
+   align-items: flex-end;
 }
 
-.product-box h3{
-   font-size: 20px;
-   font-weight: 600;
+.product-txt h1 {
    color: #005596;
-   margin-top: 16px;
-   margin-bottom: 15px;
+   font-size: xx-large;
+   font-weight: 900;
+}
+
+.container{
+   width: 900px;
+   max-width: 90vw;
+   margin: auto;
+   padding-top: 10px;
    text-align: center;
 }
 
-.product-img img{
-   width: 250px;
-   height: 250px;
-   overflow: hidden;
-   border-radius:100%;
-   transition: 0.5s;
+.title{
+   font-size: xx-large;
+   padding: 20px 0;
 }
-.product-box p{
-   padding: 0;
-   text-align: center;
-   font-size: 15px;
+
+.listProduct .item img{
+   width: 90%;
+   filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+.listProduct .item{
+   background-color: #EEEEE6;
+   padding: 20px;
+   border-radius: 20px;
+}
+.listProduct .item h2{
    font-weight: 500;
+   font-size: large;
 }
-
-.product-img:hover img{
-   box-shadow: 0 0 10px 10px rgba(0, 85, 150, 0.1);
-   transform: scale(1.08);
+.listProduct .item .price{
+   letter-spacing: 7px;
+   font-size: small;
 }
+/* detail page */
 
-/* SEC Factors */
-
-.factors{
-   align-items: center;
-   background: #fffff0;
-   box-shadow: 0 0 20px rgba(33, 35, 38, 0.5) inset;
-}
-
-.factors-text h2{
-   font-size: 30px;
-   font-weight: 600;
-   color: #005596;
-   padding-top: 40px;
-   padding-bottom: 20px;
-   text-align: center;
-   margin-bottom: 25px;
-}
-
-.icon{
-   padding-bottom: 40px;
-}
-
-.icon img{
-   width: 70px;
-   margin-right: 15px;
-}
-
-.factor-col-text{
-align-items: center;
-}
-
-
-.factor-tab{
-   margin-right: 100px;
-   margin-left: 100px;
-   margin-top: 40px;
-}
-
-
-.factor-col-td1,
-.factor-col-td3{
-   padding-right: 50px;
-}
-.factor-col-td1,
-.factor-col-td2,
-.factor-col-td3,
-.factor-col-td4{
-padding-bottom: 40px;
-}
-
-/* SEC Intergration */
-.intergration{
-   align-items: center;
-   background-color: #005596;
-}
-
-.intergration h2{
-   font-size: 30px;
-   font-weight: 600;
-   color: #ffffff;
-   padding-top: 40px;
-   padding-bottom: 20px;
-   text-align: center;
-}
-
-.int-col{
+.detail{
    display: grid;
-   grid-template-columns: 220px 220px 220px 220px;
-   padding-top: 40px;
-   padding-bottom: 20px;
-   justify-content: center;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 50px;
+   text-align: left;
 }
+.detail .image img{
+   width: 100%;
+}
+.detail .image{
+   position: relative;
+}
+.detail .image::before{
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   content: '';
+   background-color: #94817733;
+   z-index: -1;
+   border-radius: 190px 100px 170px 180px;
+   left: calc(50% - 150px);
+   top: 50px;
 
-.int-box01,
-.int-box02,
-.int-box03,
-.int-box04,
-.int-box1,
-.int-box2,
-.int-box3,
-.int-box4{
-   background-color: #ffffff;
-   height: 400px;
-   flex-direction: column;
-   align-items: center;
+}
+.detail .name{
+   font-size: xxx-large;
+   padding: 40px 0 0 0;
+   margin: 0 0 10px 0;
+}
+.detail .price{
+   font-weight: bold;
+   font-size: x-large;
+   letter-spacing: 7px;
+   margin-bottom: 20px;
+}
+.detail .buttons{
    display: flex;
+   gap: 20px;
+   margin-bottom: 20px;
 }
-
-.int-box1 img,
-.int-box2 img,
-.int-box3 img,
-.int-box4 img{
-   width: 200px;
+.detail .buttons button{
+   background-color: #eee;
+   border: none;
+   padding: 15px 20px;
+   border-radius: 20px;
+   font-family: Poppins;
+   font-size: large;
 }
-
-.int-row1{
-   display: grid;
-   padding-top: 40px;
-   padding-bottom: 20px;
+.detail .buttons svg{
+   width: 15px;
 }
-
-.int-box1{
-   position: relative;
-   z-index: 5000;
-   width: 220px;
-   margin-right: -50px;
-   right: 20px;
+.detail .buttons span{
+   background-color: #555454;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   margin-left: 20px;
 }
-
-.int-box1 h3{
-   text-align: center;
-   margin-top: 20px;
-   color: #005596;
-   font-weight: 600;
-   font-size: 20px;
+.detail .buttons button:nth-child(2){
+   background-color: #2F2F2F;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #eee;
+   box-shadow: 0 10px 20px #2F2F2F77;
 }
-
-.int-box1 p{
-   text-align: center;
-   margin: 20px;
-   width: 180px;
-   color: #000;
-   font-size: 15px;
+.detail .description{
+   font-weight: 300;
 }
-
-.int-box01{
-   position: absolute;
-   width: 240px;
-   height: 400px;
-   z-index: 4000;
-   transform: skew(-5deg);
-   border-right: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.int-row2{
-   display: grid;
-   padding-top: 40px;
-   padding-bottom: 20px;
-}
-
-.int-box2{
-   position: relative;
-   z-index: 3000;
-   width: 220px;
-   height: 403px;
-   transform: translateY(-3px);
-   align-items:flex-end;
-}
-
-.int-box2 h3{
-   text-align: center;
-   margin-top: 20px;
-   color: #005596;
-   font-weight: 600;
-   font-size: 20px;
-}
-
-.int-box2 p{
-   text-align: right;
-   margin: 20px 0px 20px 20px;
-   width: 180px;
-   color: #000;
-   font-size: 15px;
-}
-
-.int-box02{
-   position: absolute;
-   width: 240px;
-   height: 403px;
-   z-index: 2500;
-   transform: skew(-6deg) translateY(-3px);
-   border-right: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.int-row3{
-   display: grid;
-   padding-top: 40px;
-   padding-bottom: 20px;
-}
-
-.int-box3{
-   position: relative;
-   z-index: 2000;
-   width: 220px;
-   height: 406px;
-   transform: translateY(-6px);
-   align-items: flex-end;
-}
-
-.int-box3 h3{
-   text-align: center;
-   margin-top: 20px;
-   color: #005596;
-   font-weight: 600;
-   font-size: 20px;
-}
-
-.int-box3 p{
-   text-align: right;
-   margin: 20px 0px 20px 20px;
-   width: 180px;
-   color: #000;
-   font-size: 15px;
-}
-
-.int-box03{
-   position: absolute;
-   width: 240px;
-   height: 406px;
-   z-index: 1500;
-   transform: skew(-5deg) translateY(-6px);
-   border-right: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.int-row4{
-   display: grid;
-   padding-top: 40px;
-   padding-bottom: 20px;
-}
-
-.int-box4{
-   position: relative;
-   z-index: 1000;
-   width: 240px;
-   height: 409px;
-   transform: translateY(-9px);
-   align-items: flex-end;
-}
-
-.int-box4 h3{
-   text-align: center;
-   margin-top: 20px;
-   color: #005596;
-   font-weight: 600;
-   font-size: 20px;
-}
-
-.int-box4 p{
-   text-align: right;
-   margin: 20px 0px 20px 20px;
-   width: 180px;
-   color: #000;
-   font-size: 15px;
-}
-
-.int-box04{
-   position: absolute;
-   width: 260px;
-   height: 409px;
-   z-index: 500;
-   transform: skew(-5deg) translateY(-9px);
-   border-right: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-
 
 /* SEC FOOTER */
 
@@ -757,5 +547,3 @@ padding-bottom: 40px;
    right: 0px;
    z-index: 4;
 }
-
-/* SEC THAY ĐỔI STYLE */

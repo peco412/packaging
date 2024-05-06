@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "TRAY SEALER - RTV440A",
+        "price": 200,
+        "image": "img/may4.png",
+        "description":"Khayy"
+    },
+    {
+        "id": 2,
+        "name": "Khay",
+        "price": 200,
+        "image": "img/may5.png",
+        "description":"Khayy"
+    },
+    {
+        "id": 3,
+        "name": "Khay",
+        "price": 200,
+        "image": "img/may6.png",
+        "description":"Khayy"
+    }
+]
